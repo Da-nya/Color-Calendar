@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Цветной календарик</title>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="calend" class="main_table">
+        <div>
+            <div class="table__main-header">
+                <input type="button" class="button-switch" onclick="switchWeek(-1)" value="&#9668;"/>
+                <h3 class="week__header" id="date-header"></h3>
+                <input type="button" class="button-switch" onclick="switchWeek(1)" value="&#9658;"/>
+            </div>
+            <table id="left-table"></table>
+        </div>
+        <div>
+            <div class="table__main-header">
+                <input type="button" class="button-switch" onclick="switchMonth(-1)" value="&#9668;"/>
+                <h3 class="week__header" id="mon-header"></h3>
+                <input type="button" class="button-switch" onclick="switchMonth(1)" value="&#9658;"/>
+            </div>
+            <table id="right-table"></table>
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+    drawCalendar();
+</script>
